@@ -1,0 +1,52 @@
+/* General styles for the container */
+#chart-container {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tooltip styles */
+  .tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 5px;
+    color: #333;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  #chart-container .legend {
+    padding-top: 200px;
+  }
+  /* Legend styles */
+  #chart-container .legend g {
+    cursor: pointer;
+  }
+  
+  #chart-container .legend rect {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #chart-container .legend text {
+    font-size: 14px;
+    fill: #333;
+  }
+  
+  /* Axis styles */
+  .axis path,
+  .axis line {
+    fill: none;
+  }
+  
+  .axis text {
+    font-size: 12px;
+    fill: #666;
+  }
+  
